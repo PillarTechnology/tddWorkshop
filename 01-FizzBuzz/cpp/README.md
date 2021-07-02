@@ -42,15 +42,17 @@ software, issue the following command:
 
     make
 
-You will either see and error message, or if your syntax is correct, you will
+You will either see an error message, or if your syntax is correct, you will
 see a stream of text telling you about passed and failed tests.
 
 ## Editing Tools
 
 The world is full of wonderful IDEs for C and C++.  Probably more than for any
-other language.  To keep things simple, I strongly recommend using a minimalist
-programming editor, such as vi, emacs, or VS Code.  This repo was written with
-a combination of vi and VS Code.
+other language.  They will make this work much harder.
+
+To keep things simple, I strongly recommend using a minimalist programming
+editor, such as vi, emacs, or VS Code.  This repo was written with a
+combination of vi and VS Code.
 
 If you are using VS Code I recommend having at least the C/C++ plugin from
 Microsoft, and the Clang-Format plugin to neaten up your code.
