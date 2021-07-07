@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachine", "VendingMachine\VendingMachine.csproj", "{EFEC4713-9369-4030-9CEA-07B048A1AF4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachineTests", "VendingMachineTests\VendingMachineTests.csproj", "{6277EEA8-9FC4-427A-869F-DBA1DD358F61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFEC4713-9369-4030-9CEA-07B048A1AF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEC4713-9369-4030-9CEA-07B048A1AF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEC4713-9369-4030-9CEA-07B048A1AF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEC4713-9369-4030-9CEA-07B048A1AF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6277EEA8-9FC4-427A-869F-DBA1DD358F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6277EEA8-9FC4-427A-869F-DBA1DD358F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6277EEA8-9FC4-427A-869F-DBA1DD358F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6277EEA8-9FC4-427A-869F-DBA1DD358F61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
