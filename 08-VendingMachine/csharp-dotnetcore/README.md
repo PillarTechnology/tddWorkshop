@@ -8,44 +8,6 @@ The point of this kata to to provide a larger than trivial exercise that can be
 used to practice TDD.  A significant portion of the effort will be in
 determining what tests should be written and, more importantly, written next.
 
-Hardware specification is as follows:
-
-  * 4-coin coin accepter, connected via a serial interface.  It has
-    bidirectional communication.  It can send and receive the following messages:
-
-    * COIN1 - COIN4, sent when a valid coin is dropped.  *Note:* Coin acceptor
-      hardware has no concept of denomination.  They can be trained on any coin
-      or token.  The software is responsible for knowing the value of the different coins.
-    * USERCANCEL, sent when the user hits the coin-return button.
-    * MACHINECANCEL, sent by the vending machine to cancel a purchase.
-    * DISPENSE1 - DISPENSE4, sent by the vending machine to make change from
-      coin1 - coin4.  See previous note re: denominations.
-    * COINPRESENT is sent by the vending machine.  The coin accepter responds
-      with a string containing all of the coins it has available for making
-      change.  Because of physical hardware limitations this never exceeds one
-      coin for each coin type.
-
-    Internally the coin accepter also has a sensor for each coin type,
-    available as GPIO sensors.  For each coin type, the sensor will read HIGH if a
-    coin is present, and LOW if there is no coin present.
-
-  * 4x4 button array, used for selecting product.  Connected via serial
-    interface.  When a button is pressed it sends the row and column in the
-    form "A1" or "D4"
-
-  * Stock sensor, detects if there is stock present in a given slot.  It uses
-    the same indexing system as the button array.  Send a string with grid
-    components, the interface returns a boolean, true if stock is present, false if
-    stock is not present.
-    
-  * 2x20 display.  It can display 2 lines of 20 characters each.  It has a
-    serial interface to receive text.  Whenever a block of text is received it
-    will clear the display of any previous text.
-
-
-*Each serial device has its own serial interface which must be handled separately.*
-
-
 ## Features
 
 ### Accept Coins
