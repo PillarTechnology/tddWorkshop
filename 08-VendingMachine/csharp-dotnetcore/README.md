@@ -8,6 +8,24 @@ The point of this kata to to provide a larger than trivial exercise that can be
 used to practice TDD.  A significant portion of the effort will be in
 determining what tests should be written and, more importantly, written next.
 
+## Hardware Limitations
+
+The different components of a vending machine communication via serial
+communications, and don't have another way to query each other.  The separate
+components are:
+
+  * Coin Acceptor
+  * Controller
+  * Selector Button Panel
+  * Display
+  * Product Dispenser
+  * Product Sensor (to see if stock is present)
+
+A serial bus class has been provided which works much like an actual serial
+interface.  It has a Send() and a Recv() method.  What is sent can be read via
+Recv().  This will eliminate the need for most mocks.
+
+
 ## Features
 
 ### Accept Coins
