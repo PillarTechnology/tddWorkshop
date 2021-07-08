@@ -17,7 +17,7 @@ components are:
   * Coin Acceptor
   * Controller
   * Selector Button Panel
-  * Display
+  * Display - These are *write-only* devices.  It is not possible to read from the device.
   * Product Dispenser
   * Product Sensor (to see if stock is present)
 
